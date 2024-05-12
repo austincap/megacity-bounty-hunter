@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bs6g53qs27fyb"
+path="res://.godot/imported/megacityfourobj.obj-774387e15bebf2ed6fc292eee38f75ed.mesh"
+
+[deps]
+
+files=["res://.godot/imported/megacityfourobj.obj-774387e15bebf2ed6fc292eee38f75ed.mesh"]
+
+source_file="res://megacityfourobj.obj"
+dest_files=["res://.godot/imported/megacityfourobj.obj-774387e15bebf2ed6fc292eee38f75ed.mesh", "res://.godot/imported/megacityfourobj.obj-774387e15bebf2ed6fc292eee38f75ed.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

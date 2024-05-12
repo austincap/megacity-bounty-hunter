@@ -1,0 +1,1818 @@
+# Blender 4.0.2 MTL File: 'megacitytwo.blend'
+# www.blender.org
+
+newmtl Baseboard_material
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl K3BD_Plywood
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_PlyWoodD_basecolor.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_PlyWoodD_metallic.png
+
+newmtl K3BD_halogram
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.450000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_BDHalogramA_emissive.png
+map_Ke C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_BDHalogramA_emissive.png
+map_d C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_BDHalogramA_opacity.png
+
+newmtl KB3D_CBP_ConcreteTiles
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl KB3D_CBP_SteelGalvanGray
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl KB3D_CBP_SteelPanelGray
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl KB3D_CBP_SteelPanelGrayB
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl KB3D_CBP_SteelPanelPaintYellow
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl KB3D_CBP_SteelPanelWhiteD
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl KB3D_CBP_WireTrim
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl KB3D_FloorRoof
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_FloorRoofTopA_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_FloorRoofTopA_roughness.png
+
+newmtl KB3D_GlassGreenDirty
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.197551 0.175430 0.056750
+Ni 1.500000
+illum 9
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_GlassGreenDirtyA_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_GlassGreenDirtyA_roughness.png
+map_d C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_GlassGreenDirtyA_refraction.png
+
+newmtl KB3D_MetalPaintGray
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_MetalPaintGrayE_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_MetalPaintGrayE_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_MetalPaintGrayE_metallic.png
+
+newmtl KB3D_MetalPaintGreen
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_MetalPaintGreenC_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_MetalPaintGreenC_roughness.png
+
+newmtl KB3D_MetalPaintWhiteOld
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_MetalPaintWhiteOld_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_MetalPaintWhiteOld_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_MetalPaintWhiteOld_metallic.png
+
+newmtl KB3D_SteelPanelDark
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelOld_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelOld_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelOld_metallic.png
+
+newmtl KB3D_SteelPanelRough
+Ns 4.648760
+Ka 0.409091 0.409091 0.409091
+Kd 0.245973 0.238464 0.238464
+Ks 0.245455 0.245455 0.245455
+Ke 0.000000 0.000000 0.000000
+Ni 4.450000
+d 1.000000
+illum 3
+
+newmtl KB3D_StreetTilesDark
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_StreetTilesC_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_StreetTilesC_roughness.png
+
+newmtl KB3D_steelpanelred
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelPanelPaintRedB_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelPanelPaintRedB_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelPanelPaintRedB_metallic.png
+
+newmtl Material
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/yellowunderground.png
+
+newmtl Material.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/abandon5.png
+
+newmtl Material.002
+Ns 6.694221
+Ka 0.640909 0.640909 0.640909
+Kd 0.384856 0.382279 0.373871
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl Material.003
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.225689 0.044084 0.033139
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.004
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/metalbase2.jpg
+
+newmtl Material.006
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.011
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Material.012
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl MetalCorrodedHeavy001_2K
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl RoofTilesTerracotta004_2K
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Roof_material
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.581000 0.105000 0.068000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl TilesMarbleChevronCreamGrey001_2K
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Unnamed_Material
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/aitextures/00127-3018231833-game texture .png
+
+newmtl Wood
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Wood063_2K_Color.jpg
+map_Ns C:/Wood063_2K_Roughness.jpg
+
+newmtl abandonded5
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/abandon5.png
+
+newmtl abandoned1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/abandoned1.jpg
+
+newmtl abandoned2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/abandoned2.jpg
+
+newmtl aibuilding7
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/aitextures/00162-3732510153-game texture _output.png
+map_refl C:/Users/Austin/Documents/BlenderWork/aitextures/00162-3732510153-game texture _output.png
+
+newmtl aislums
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/aitextures/00137-3484119592-game texture .png
+
+newmtl aislums3
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/aitextures/00157-1923164915-game texture .png
+
+newmtl aislums4
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/aitextures/00115-2271081205-game texture .png
+
+newmtl aislums5
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/aitextures/00052-2331809044-cyberpunk slu.png
+
+newmtl ancient
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/ancient.png
+
+newmtl apartments1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/apartments1.jpg
+
+newmtl areas_service
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.086500 0.090842 0.088656
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl bank1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/bank1.png
+
+newmtl beigeplastic
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_PlasticBeigeA_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_PlasticBeigeA_roughness.png
+
+newmtl blackceramic
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_CeramicTilesDark_basecolor.png
+
+newmtl blue-purp-2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/blue-purp-2.png
+
+newmtl bluesteel
+Ns 458.698395
+Ka 0.645455 0.645455 0.645455
+Kd 0.107558 0.254974 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl bountyhuntingshop1
+Ns 250.000000
+Ka 0.522727 0.522727 0.522727
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/bountyhuntingshop1.jpg
+
+newmtl bountyhuntingshop2
+Ns 250.000000
+Ka 0.522727 0.522727 0.522727
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/bountyhuntingshop1.jpg
+
+newmtl brass
+Ns 699.504150
+Ka 0.618182 0.618182 0.618182
+Kd 0.446788 0.317237 0.119783
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl brassmetal
+Ns 522.334717
+Ka 0.850000 0.850000 0.850000
+Kd 0.190173 0.156682 0.048438
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl brickedup
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_BrickWorkDirty_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_BrickWorkDirty_roughness.png
+
+newmtl brownstone1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/brownstone1.png
+
+newmtl casino1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/casino1.png
+
+newmtl chainlink
+Ns 113.140480
+Ka 0.877273 0.877273 0.877273
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 6
+map_Kd C:/Users/Austin/Documents/BlenderWork/mats/chainlink.png
+map_d C:/Users/Austin/Documents/BlenderWork/mats/chainlink.png
+
+newmtl chainlink.001
+Ns 113.140480
+Ka 0.877273 0.877273 0.877273
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 6
+map_Kd C:/Users/Austin/Documents/BlenderWork/mats/chainlink.png
+map_d C:/Users/Austin/Documents/BlenderWork/mats/chainlink.png
+
+newmtl church1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/church1.jpg
+
+newmtl colorbrick1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/colorbrick1.png
+
+newmtl colorful2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/colorful2.jpg
+
+newmtl concrete1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/concrete1.jpg
+
+newmtl concrete3
+Ns 0.000000
+Ka 0.904545 0.904545 0.904545
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/concrete3.jpg
+
+newmtl concretewall4
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/concretewall4.png
+
+newmtl concretewall4.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/concretewall4.png
+
+newmtl crackedpavement
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/crackedpavement.png
+
+newmtl darkjapan
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/darkjapan.jpg
+
+newmtl darkmetal
+Ns 509.276917
+Ka 0.272727 0.272727 0.272727
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelGolden_roughness.png
+
+newmtl dilapred
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/dilapred.jpg
+
+newmtl drugshop1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/drugs1.png
+
+newmtl fishingbuilding
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/fishingbuilding.png
+
+newmtl foods1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/foods1.jpg
+
+newmtl forest
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.020000 0.208000 0.007000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl future3
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/aitextures/00214-3686078970-grimy steel b.png
+
+newmtl futureplates1
+Ns 404.958679
+Ka 0.704545 0.704545 0.704545
+Kd 0.421568 0.314788 0.062871
+Ks 0.068182 0.068182 0.068182
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl glass
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.518181
+illum 1
+
+newmtl glass1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.754136
+illum 9
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/glass1.jpg
+
+newmtl glass2
+Ns 640.000000
+Ka 0.409091 0.409091 0.409091
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/glass2.jpg
+
+newmtl glasscyan
+Ka 1.000000 1.000000 1.000000
+Ks 0.358268 0.358268 0.358268
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_GlassBlueTech_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_GlassBlueTech_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_GlassBlueTech_metallic.png
+
+newmtl graffiti1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/graffiti1.jpg
+
+newmtl graffiti2
+Ns 0.000000
+Ka 0.531818 0.531818 0.531818
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/graffiti2.jpg
+
+newmtl graffiti3
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/graffiti3.jpg
+
+newmtl gray-red-blue-1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/gray-red-blue-1.png
+
+newmtl gray33
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/gray33.png
+
+newmtl graybebop
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/graybebop.png
+
+newmtl green1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/green1.png
+
+newmtl green3
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/green3.png
+
+newmtl grimemetal1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/grimemetal1.png
+
+newmtl grimemetal2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/grimemetal2.png
+
+newmtl grimemetal3
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/grimemetal3.png
+
+newmtl grimemetal4
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/grimemetal4.png
+
+newmtl grimemetal4.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/grimemetal4.png
+
+newmtl grimemetal8
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/grimemetal8.png
+
+newmtl hexagonal
+Ns 250.000000
+Ka 0.531818 0.531818 0.531818
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/hexagon.png
+
+newmtl industry1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/industry1.jpg
+
+newmtl industry2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/industry2.jpg
+
+newmtl industry3
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/industry3.jpg
+
+newmtl japan2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/japan2.png
+
+newmtl japan4
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/japan4.png
+
+newmtl japan6
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/japan6.png
+
+newmtl japanesesign
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/game-right.png
+
+newmtl japanstorefront1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/japanstorefront1.jpg
+
+newmtl japanstorefront2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/japanstorefront2.png
+
+newmtl japanstorefront4
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/japanstorefront4.png
+
+newmtl japanstorefront5
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/japanstorefront5.png
+
+newmtl japanstorefront6
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/japanstorefront6.png
+
+newmtl lovehotel
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/aitextures/lovehotel.png
+
+newmtl mcdo
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/mcdo.png
+
+newmtl megabuilding3
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/megabuilding3.png
+
+newmtl megabuilding4
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/megabuilding4.png
+
+newmtl metal7
+Ns 576.218994
+Ka 0.800000 0.800000 0.800000
+Kd 0.143987 0.181587 0.090183
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl metal8
+Ns 576.218994
+Ka 0.800000 0.800000 0.800000
+Kd 0.143987 0.181587 0.090183
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl metal_patchwor
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/metalpatchwork.png
+
+newmtl metalblue
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_MetalPaintBlueFlat_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_MetalPaintBlueFlat_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_MetalPaintBlueFlat_metallic.png
+
+newmtl metalplate
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/metalplate.png
+
+newmtl metalplate3
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl metalscrew
+Ns 496.384247
+Ka 0.900000 0.900000 0.900000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.029978 0.029978 0.029978
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl metaltread
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/metaltread.jpg
+
+newmtl multipack1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/multipack1.jpg
+
+newmtl multipack2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/multipack2.png
+
+newmtl museum
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/museum.jpg
+
+newmtl neonsign_orange
+Ns 41.838837
+Ka 1.000000 1.000000 1.000000
+Kd 0.000758 0.000683 0.000613
+Ks 0.500000 0.500000 0.500000
+Ke 2.121584 0.675038 0.411050
+Ni 11.950000
+d 1.000000
+illum 2
+
+newmtl neonsign_orange.001
+Ns 41.838837
+Ka 1.000000 1.000000 1.000000
+Kd 0.000758 0.000683 0.000613
+Ks 0.500000 0.500000 0.500000
+Ke 2.121584 0.675038 0.411050
+Ni 11.950000
+d 1.000000
+illum 2
+
+newmtl neonsign_orange.002
+Ns 41.838837
+Ka 1.000000 1.000000 1.000000
+Kd 0.000758 0.000683 0.000613
+Ks 0.500000 0.500000 0.500000
+Ke 2.121584 0.675038 0.411050
+Ni 11.950000
+d 1.000000
+illum 2
+
+newmtl oldbrick1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/oldbrick1.png
+
+newmtl oldbrick2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/oldbrick2.png
+
+newmtl oldbrick3
+Ns 7.458684
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/oldbrick3.jpg
+
+newmtl oldbrick4
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/oldbrick4.jpg
+
+newmtl pavement
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl pavement.001
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl pipe1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/pipe1.png
+
+newmtl polycarbonate
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_PolycarbonateGWB_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_PolycarbonateGWB_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_PolycarbonateGWB_metallic.png
+
+newmtl pueblo1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/pueblo1.jpg
+
+newmtl red
+Ns 250.000000
+Ka 0.813636 0.813636 0.813636
+Kd 0.205523 0.008019 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl redbebop2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/redbebop2.png
+
+newmtl redbebop4
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/redbebop4.png
+
+newmtl redpanel
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelPanelPaintRedB_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelPanelPaintRedB_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelPanelPaintRedB_metallic.png
+
+newmtl reflective_environ
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl research_hexagons
+Ns 119.338860
+Ka 0.295455 0.295455 0.295455
+Kd 0.050909 0.035750 0.014350
+Ks 0.500000 0.500000 0.500000
+Ke 0.505549 0.000000 0.053483
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl roof
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.290000 0.250000 0.210000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl roof.001
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.290000 0.250000 0.210000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl roofcorrugated
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_RoofCorrugatedOldA_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_RoofCorrugatedOldA_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_RoofCorrugatedOldA_metallic.png
+
+newmtl rotaryfan
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl rustmetal2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/rusty-metal2.png
+
+newmtl sidewalk
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/sidewalk.png
+
+newmtl signs1
+Ns 826.446228
+Ka 0.136364 0.136364 0.136364
+Ks 0.500000 0.500000 0.500000
+Ni 1.450000
+d 0.863636
+illum 6
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/signs1.png
+map_Ke C:/Users/Austin/Documents/BlenderWork/textures/signs1.png
+
+newmtl signs2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.065938 0.065938 0.065938
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/signs2.png
+
+newmtl silverbebop
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/silverbebop.png
+
+newmtl slums1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/slums1.jpg
+
+newmtl slums2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/slums2.png
+
+newmtl slums22
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/slums22.png
+
+newmtl slums4
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/slums4.jpg
+
+newmtl slums5
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/slums5.png
+
+newmtl solarpanel
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SolarPanelsE_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SolarPanelsE_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SolarPanelsE_metallic.png
+
+newmtl stairs1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/stairs1.jpg
+
+newmtl stairs1.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/stairs1.jpg
+
+newmtl stairs1.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/stairs1.jpg
+
+newmtl steelgolden
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelGolden_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelGolden_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelGolden_metallic.png
+
+newmtl steelorange
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelPanelPaintOrange_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelPanelPaintOrange_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelPanelPaintOrange_metallic.png
+
+newmtl steelpaneldarkdirt
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelPanelDarkDirt_basecolor.png
+map_Ns C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelPanelDarkDirt_roughness.png
+map_refl C:/Users/Austin/Documents/BlenderWork/ktextures/KB3D_CBD_SteelPanelDarkDirt_metallic.png
+
+newmtl stone1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/stone1.jpg
+
+newmtl stone3
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/stone3.png
+
+newmtl street
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:/Users/Austin/Documents/BlenderWork/street1.jpg
+
+newmtl street1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/street1.jpg
+
+newmtl tanstone
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl thin_glass
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl tiledbebop
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/tiledbebop.png
+
+newmtl tileorange
+Ns 669.421509
+Ka 0.786364 0.786364 0.786364
+Kd 0.800000 0.427331 0.397237
+Ks 0.545455 0.545455 0.545455
+Ke 0.022397 0.022397 0.022397
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl tokyotiles
+Ns 669.421509
+Ka 0.786364 0.786364 0.786364
+Kd 0.800000 0.427331 0.397237
+Ks 0.545455 0.545455 0.545455
+Ke 0.022397 0.022397 0.022397
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl turquoise1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/turqouise1.png
+
+newmtl wall
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.500000 0.200000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl wall.001
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.500000 0.200000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl white1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/white1.png
+
+newmtl white3
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/white3.png
+
+newmtl windowsbebop
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/windowsbebop.png
+
+newmtl windowsbebop.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/windowsbebop.png
+map_refl C:/Users/Austin/Documents/BlenderWork/textures/windowsbebop.png
+
+newmtl wood2
+Ns 0.000000
+Ka 0.586364 0.586364 0.586364
+Kd 0.590109 0.539548 0.517708
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.495455
+illum 6
+
+newmtl yellow
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.590604 0.463114 0.007012
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl yellow1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/yellow1.jpg
+
+newmtl yellowbebop
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Austin/Documents/BlenderWork/textures/yellowbebop.png

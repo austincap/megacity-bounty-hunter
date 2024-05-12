@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt1iiljql1y8n"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lyus8"]
+albedo_color = Color(0.364706, 0.34902, 0.215686, 1)
+metallic = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_2sryc"]
+material = SubResource("StandardMaterial3D_lyus8")
+size = Vector3(0.495, 1.75, 0.465)
+
+[node name="lamppost" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_2sryc")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.353686, 0.747034, 0)
+light_color = Color(1, 0.454902, 1, 1)
+light_energy = 3.424
+light_indirect_energy = 3.263
+omni_range = 62.18
+omni_attenuation = 0.659754
