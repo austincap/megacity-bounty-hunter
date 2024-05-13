@@ -1,8 +1,8 @@
 extends CharacterBody3D
 
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 10.5
+var SPEED = 5.0
+const JUMP_VELOCITY = 20.5
 const LOOKAROUND_SPEED = 0.01
 var gliding = false
 var hookshotlatched = false
@@ -35,9 +35,10 @@ func _physics_process(delta):
 	var input_dir = Input.get_vector("a", "d", "w", "s")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if Input.is_action_pressed("rightclick"):
+		print("hookshot held")
 		if $RayCast3D.is_colliding():
 			if hookshotlatched:
-				print("hookshotlatched")
+				print("hookshot latched")
 				velocity.y -= 0 * delta
 				direction = Vector3(0, 0, 0)
 				axis_lock_linear_x = true
@@ -48,15 +49,25 @@ func _physics_process(delta):
 					var collisionPoint = $RayCast3D.get_collision_point()
 					print(collisionPoint)
 					#Unit vector pointing at the target position from the characters position
-					direction = global_position.direction_to(collisionPoint)
+					if $RayCast3D.is_colliding():
+						direction = global_position.direction_to(collisionPoint)
+					else:
+						direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 					velocity = direction * SPEED * 10.0
 				else:
 					direction = Vector3(0, 0, 0)
 					velocity = direction * 0
 					hookshotlatched = true
+		else:
+			print($RayCast3D.is_colliding())
+			print("raycast not colliding")
+			direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+			velocity.x = move_toward(velocity.x, 0, SPEED)
+			velocity.y -= gravity * delta
+			velocity.z = move_toward(velocity.z, 0, SPEED)
 	else:
 		print("hookshot released")
-		
+		direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 		hookshotlatched = false
 		axis_lock_linear_x = false
 		axis_lock_linear_y = false
@@ -72,15 +83,20 @@ func _physics_process(delta):
 			else:
 				if Input.is_action_pressed("space"):
 					gliding = true
-					velocity.y -= gravity * delta * 0.02
 		# Get the input direction and handle the movement/deceleration.
 		# As good practice, you should replace UI actions with custom gameplay actions.
 
+		if Input.is_action_pressed("shift"):
+			SPEED = 15.0
+		else:
+			SPEED = 5.0
+			
 		if direction:
 			if gliding == true:
 				print("gliding")
-				velocity.x = direction.x * SPEED * 2.0
-				velocity.z = direction.z * SPEED * 2.0
+				velocity.x = direction.x * SPEED * 8.0
+				velocity.y -= gravity * delta * 0.02
+				velocity.z = direction.z * SPEED * 8.0
 				if Input.is_action_just_released("space"):
 					print("not gliding")
 					gliding = false
@@ -92,3 +108,8 @@ func _physics_process(delta):
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 			velocity.z = move_toward(velocity.z, 0, SPEED)
 	move_and_slide()
+
+
+func _on_area_3d_body_entered(body):
+	if body:
+		print(body.get_name())

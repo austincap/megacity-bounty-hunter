@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dd8qqnj3asulg"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_f14pg"]
+radius = 1.435
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_5scpc"]
+
+[node name="person" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.98856, 0.418247, -0.273879)
+shape = SubResource("SphereShape3D_f14pg")
+
+[node name="person" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_5scpc")
+
+[node name="person" type="Node3D" parent="person"]
