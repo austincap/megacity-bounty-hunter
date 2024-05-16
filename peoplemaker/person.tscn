@@ -25,3 +25,5 @@ shape = SubResource("SphereShape3D_f14pg")
 transform = Transform3D(1, 0, 0, 0, 2.15325, 0, 0, 0, 1.54052, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_rtga6")
 mesh = SubResource("CapsuleMesh_5scpc")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

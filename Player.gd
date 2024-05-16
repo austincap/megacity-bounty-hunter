@@ -23,13 +23,12 @@ func _input(event):
 		transform.basis = Basis() # reset rotation
 		rotate_object_local(Vector3(0, 1, 0), rot_x) # first rotate in Y
 		rotate_object_local(Vector3(1, 0, 0), rot_y) # then rotate in X
-#	if (event is InputEventMouseButton):
-#		print(event)
-#		var collisionPoint = $RayCast3D.get_collision_point()
-#		print(collisionPoint)
-#		velocity.y = move_toward(collisionPoint.y, 0, SPEED)
-#		velocity.x = move_toward(collisionPoint.x, 0, SPEED)
-#		velocity.z = move_toward(collisionPoint.z, 0, SPEED)
+	if event is InputEventKey and event.pressed and event.keycode == KEY_Q:
+		print($RayCast3D.get_collision_point())
+		get_tree().get_root().get_node("Node3D/NavigationRegion3D2/person").set_movement_target($RayCast3D.get_collision_point())
+		print(get_tree().get_root().get_node("Node3D/NavigationRegion3D2/person/NavigationAgent3D").get_next_path_position())
+		print(get_tree().get_root().get_node("Node3D/NavigationRegion3D2/person/NavigationAgent3D").get_final_position())
+	
 
 func _physics_process(delta):
 	var input_dir = Input.get_vector("a", "d", "w", "s")
@@ -66,7 +65,7 @@ func _physics_process(delta):
 			velocity.y -= gravity * delta
 			velocity.z = move_toward(velocity.z, 0, SPEED)
 	else:
-		print("hookshot released")
+		#print("hookshot released")
 		direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 		hookshotlatched = false
 		axis_lock_linear_x = false
