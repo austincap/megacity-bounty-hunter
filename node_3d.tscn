@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdvvjt7osxlgn"]
+
+[ext_resource type="NavigationMesh" uid="uid://bji7mixmoemfk" path="res://navm3.tres" id="1_puyte"]
+
+[node name="Node3D" type="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.49397, 0.81426, 0.012188)
+navigation_mesh = ExtResource("1_puyte")
