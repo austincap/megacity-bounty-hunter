@@ -9,3 +9,4 @@ sky_material = SubResource("ProceduralSkyMaterial_qvbww")
 [resource]
 background_mode = 2
 sky = SubResource("Sky_vguyk")
+volumetric_fog_enabled = true

@@ -25,9 +25,9 @@ func _input(event):
 		rotate_object_local(Vector3(1, 0, 0), rot_y) # then rotate in X
 	if event is InputEventKey and event.pressed and event.keycode == KEY_Q:
 		print($RayCast3D.get_collision_point())
-		get_tree().get_root().get_node("Node3D/NavigationRegion3D2/person").set_movement_target($RayCast3D.get_collision_point())
-		print(get_tree().get_root().get_node("Node3D/NavigationRegion3D2/person/NavigationAgent3D").get_next_path_position())
-		print(get_tree().get_root().get_node("Node3D/NavigationRegion3D2/person/NavigationAgent3D").get_final_position())
+		get_tree().get_root().get_node("mc4/NavigationRegion3D/person").set_movement_target($RayCast3D.get_collision_point())
+		print(get_tree().get_root().get_node("mc4/NavigationRegion3D/person/NavigationAgent3D").get_next_path_position())
+		print(get_tree().get_root().get_node("mc4/NavigationRegion3D/person/NavigationAgent3D").get_final_position())
 	
 
 func _physics_process(delta):
@@ -111,4 +111,6 @@ func _physics_process(delta):
 
 func _on_area_3d_body_entered(body):
 	if body:
+		print("IS IN GROUP:")
+		print(body.is_in_group("NPC"))
 		print(body.get_name())

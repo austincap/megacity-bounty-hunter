@@ -65,6 +65,7 @@ q={
 
 [rendering]
 
+textures/default_filters/anisotropic_filtering_level=0
 environment/ssao/quality=1
 environment/ssil/quality=1
 limits/spatial_indexer/threaded_cull_minimum_instances=2000

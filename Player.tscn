@@ -3,28 +3,26 @@
 [ext_resource type="Script" path="res://Player.gd" id="1_th4tk"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p2eoi"]
-margin = 0.01
+margin = 0.001
 radius = 0.4
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_54e3a"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ebmgp"]
 radius = 0.4
 radial_segments = 6
 rings = 2
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_54e3a"]
-
 [node name="Player" type="CharacterBody3D"]
 slide_on_ceiling = false
 floor_block_on_wall = false
 floor_snap_length = 0.5
-safe_margin = 1.0
+safe_margin = 0.5
 script = ExtResource("1_th4tk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.179349, 0)
 shape = SubResource("CapsuleShape3D_p2eoi")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
-mesh = SubResource("CapsuleMesh_ebmgp")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.243788, 3.44347)
@@ -44,5 +42,10 @@ collision_mask = 2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.43662)
 shape = SubResource("SphereShape3D_54e3a")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0657563, 0)
+mesh = SubResource("CapsuleMesh_ebmgp")
+skeleton = NodePath("../CollisionShape3D")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
