@@ -1,0 +1,7 @@
+a = 1
+b = 2.5
+c = "Hello, world !"
+d = a
+character Sy "Sylvie"
+Sy.life = 5
+e = Sy.life

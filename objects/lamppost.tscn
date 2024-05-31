@@ -6,17 +6,16 @@ metallic = 1.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_2sryc"]
 material = SubResource("StandardMaterial3D_lyus8")
-size = Vector3(0.495, 1.75, 0.465)
+size = Vector3(0.5, 4, 0.5)
 
-[node name="lamppost" type="Node3D"]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="lamppost" type="MeshInstance3D"]
 mesh = SubResource("BoxMesh_2sryc")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.353686, 0.747034, 0)
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 1.73198, 0)
 light_color = Color(1, 0.454902, 1, 1)
-light_energy = 3.424
-light_indirect_energy = 3.263
-omni_range = 62.18
+light_energy = 3.0
+light_indirect_energy = 3.0
+light_volumetric_fog_energy = 2.0
+omni_range = 20.0
 omni_attenuation = 0.659754

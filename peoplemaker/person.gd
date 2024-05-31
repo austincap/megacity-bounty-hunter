@@ -6,8 +6,9 @@ var movement_target: Vector3
 
 func _ready() -> void:
 	movement_target = Vector3(0,10,0)
-	print(get_tree().get_root().get_node("mc4/NavigationRegion3D/person/NavigationAgent3D").get_name())
-	navigation_agent = get_tree().get_root().get_node("mc4/NavigationRegion3D/person/NavigationAgent3D")
+	#print(get_tree().get_root().get_node("mc4/NavigationRegion3D/person/NavigationAgent3D").get_name())
+	#navigation_agent = get_tree().get_root().get_node("mc4/NavigationRegion3D/person/NavigationAgent3D")
+	navigation_agent = $NavigationAgent3D
 	navigation_agent.set_target_position(movement_target)
 	navigation_agent.velocity_computed.connect(Callable(_on_velocity_computed))
 

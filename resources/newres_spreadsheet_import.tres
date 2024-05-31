@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ResourceTablesImport" load_steps=4 format=3 uid="uid://cvoxc2neh2y8l"]
+
+[ext_resource type="Script" path="res://resources/newres.gd" id="1_syxve"]
+[ext_resource type="Script" path="res://addons/resources_spreadsheet_view/import_export/spreadsheet_import.gd" id="2_4arp4"]
+[ext_resource type="Script" path="res://addons/resources_spreadsheet_view/import_export/formats_edit/edit_csv.gd" id="3_eo8el"]
+
+[resource]
+script = ExtResource("2_4arp4")
+prop_types = []
+prop_names = []
+edited_path = "res://resources/newres.csv"
+prop_used_as_filename = ""
+script_classname = "Newres"
+remove_first_row = true
+new_script = ExtResource("1_syxve")
+view_script = ExtResource("3_eo8el")
+delimeter = ","
+enum_format = [0, "-", "True", "False"]
+uniques = {}

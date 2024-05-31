@@ -28,3 +28,10 @@ material_override = SubResource("StandardMaterial3D_rtga6")
 mesh = SubResource("CapsuleMesh_5scpc")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="Text" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.53579, 0)
+text = "EARTEATEATAEWTAEWTAE"
+outline_size = 48
+autowrap_mode = 3
+width = 600.0

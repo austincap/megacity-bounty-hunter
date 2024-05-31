@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bd5cgapnqclvg"
+
+[deps]
+
+files=["res://examples/Random Upgrades/upgrades_csv/upgrades.color1.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.max.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.tags.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.type.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.attributes.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.icon.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.custom.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.prerequisites.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.color2.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.base.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.is.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.multiplier.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.multiplier.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.multiplier.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.max.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.list.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.list.translation"]
+
+source_file="res://examples/Random Upgrades/upgrades_csv/upgrades.csv"
+dest_files=["res://examples/Random Upgrades/upgrades_csv/upgrades.color1.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.max.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.tags.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.type.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.attributes.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.icon.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.custom.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.prerequisites.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.color2.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.base.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.is.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.multiplier.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.multiplier.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.multiplier.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.max.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.list.translation", "res://examples/Random Upgrades/upgrades_csv/upgrades.list.translation"]
+
+[params]
+
+compress=true
+delimiter=0

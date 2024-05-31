@@ -8,12 +8,37 @@
 
 config_version=5
 
+[addons]
+
+resources_spreadsheet_view/array_color_tint=100.0
+resources_spreadsheet_view/color_rows=true
+resources_spreadsheet_view/array_min_width=128.0
+resources_spreadsheet_view/resource_preview_size=32.0
+resources_spreadsheet_view/clip_headers=false
+resources_spreadsheet_view/dupe_arrays=true
+resources_spreadsheet_view/context_menu_on_leftclick=false
+rakugo/game_version="1.0.0"
+rakugo/history_length=30
+rakugo/narrator/name="narrator"
+rakugo/debug=false
+rakugo/save_folder="user://saves"
+
 [application]
 
 config/name="megacity-bounty-hunter"
-run/main_scene="res://node_3d.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+AraVox="*res://addons/aravox/aravox.gd"
+Rakugo="*res://addons/Rakugo/Rakugo.gd"
+SaveSystem="*res://addons/save_system/save_system.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/aravox/plugin.cfg", "res://addons/dialogue_label/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/dialogue_nodes/plugin.cfg", "res://addons/gut/plugin.cfg", "res://addons/rakugo/plugin.cfg", "res://addons/resources_spreadsheet_view/plugin.cfg", "res://addons/save_system/plugin.cfg")
 
 [input]
 
@@ -58,6 +83,10 @@ q={
 ]
 }
 
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://dialogues/NPC1.dialogue")
+
 [physics]
 
 3d/physics_engine="GodotPhysics3D"
@@ -70,3 +99,4 @@ environment/ssao/quality=1
 environment/ssil/quality=1
 limits/spatial_indexer/threaded_cull_minimum_instances=2000
 limits/cluster_builder/max_clustered_elements=2048.0
+occlusion_culling/use_occlusion_culling=true

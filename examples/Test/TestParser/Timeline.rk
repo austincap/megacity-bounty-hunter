@@ -1,0 +1,20 @@
+hello_world
+boby = 5
+character test_ch "Test Character"
+first_dialogue:
+	"Hello, world ! <boby> <test_ch.name>"
+	"Hello, error ! <bob> <test.name>"
+jump menu_emily
+menu menu_emily:
+	"Talk with emily" > emily_talk
+	"Wait"
+	"Blop" > test_dialog
+emily_talk:
+	"How are you ?"
+test_dialogue:
+	"Here is narration text"
+	test_ch "Here is dialogue text"
+	answer = "Are you human" ? "yes"
+menu end:
+	"return"
+	"replay" > first_dialogue

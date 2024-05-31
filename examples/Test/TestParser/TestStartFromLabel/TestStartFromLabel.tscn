@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://daym1go4cqcri"]
+
+[ext_resource type="Script" path="res://examples/Test/TestParser/TestStartFromLabel/TestStartFromLabel.gd" id="1"]
+
+[node name="TestStartFromLabel" type="Node"]
+script = ExtResource("1")

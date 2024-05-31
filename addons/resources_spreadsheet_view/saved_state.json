@@ -1,0 +1,23 @@
+{
+  "hidden_columns": {
+    "": {
+      "resource_local_to_scene": true,
+      "resource_path": true
+    }
+  },
+  "recent_paths": [
+    "res://resources/",
+    "res://resources/resources_spreadsheet_import.tres",
+    "res://resources/resources/",
+    "res://resources/resource/",
+    "res://resources/newres_spreadsheet_import.tres"
+  ],
+  "table_functions": {
+    "filter": [
+      "return true"
+    ],
+    "process": [
+      "return value"
+    ]
+  }
+}
