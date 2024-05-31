@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-#var resource2 = load("res://dialogues/NPC1.dialogue")
+var resource2 = load("res://addons/dialogue_manager/NPC1.dialogue")
 var SPEED = 5.0
 const JUMP_VELOCITY = 20.5
 const LOOKAROUND_SPEED = 0.01
@@ -25,20 +25,20 @@ func _input(event):
 		rotate_object_local(Vector3(1, 0, 0), rot_y) # then rotate in X
 	if event is InputEventKey and event.pressed and event.keycode == KEY_Q:
 		print($RayCast3D.get_collision_point())
-		get_tree().get_root().get_node("mc4/NavigationRegion3D/person").set_movement_target($RayCast3D.get_collision_point())
-		print(get_tree().get_root().get_node("mc4/NavigationRegion3D/person/NavigationAgent3D").get_next_path_position())
-		print(get_tree().get_root().get_node("mc4/NavigationRegion3D/person/NavigationAgent3D").get_final_position())
+		get_tree().get_root().get_node("SSC3").get_node("NavigationRegion3D/person").set_movement_target($RayCast3D.get_collision_point())
+		print(get_tree().get_root().get_node("SSC3").get_node("NavigationRegion3D/person/NavigationAgent3D").get_next_path_position())
+		print(get_tree().get_root().get_node("SSC3").get_node("NavigationRegion3D/person/NavigationAgent3D").get_final_position())
 	if event is InputEventKey and event.pressed and event.keycode == KEY_E:
 		for node in $Area3D.get_overlapping_bodies():
 			if node.is_in_group("NPC"):
 				print("NPC")
-				var resource = DialogueManager.create_resource_from_text("~ title\nCharacter: Hello!")
-				var dialogue_line = await DialogueManager.get_next_dialogue_line(resource, "title")
-				DialogueManager.show_dialogue_balloon(resource, "title")
+				#var resource = DialogueManager.create_resource_from_text("~ title\nCharacter: Hello!")
+				#var dialogue_line = await DialogueManager.get_next_dialogue_line(resource, "title")
+				#DialogueManager.show_dialogue_balloon(resource, "title")
 				#var resource2 = load("res://some_dialogue.dialogue")
 				# then
 				#var dialogue_line2 = await DialogueManager.get_next_dialogue_line(resource2, "this_is_a_node_title")
-				#DialogueManager.show_dialogue_balloon(resource2, "this_is_a_node_title")
+				DialogueManager.show_dialogue_balloon(resource2, "this_is_a_node_title")
 
 
 func _physics_process(delta):
