@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://s2c65xv30n83"]
+
+[resource]
+resource_name = "orange"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+roughness = 0.5

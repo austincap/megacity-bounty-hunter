@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cft3m54f4sl8c"]
+
+[resource]
+resource_name = "yellow"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+roughness = 0.5

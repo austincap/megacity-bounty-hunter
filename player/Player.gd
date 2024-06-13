@@ -1,6 +1,5 @@
 extends CharacterBody3D
 
-var resource2 = load("res://addons/dialogue_manager/NPC1.dialogue")
 var SPEED = 5.0
 const JUMP_VELOCITY = 20.5
 const LOOKAROUND_SPEED = 0.01
@@ -8,6 +7,7 @@ var gliding = false
 var hookshotlatched = false
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+var currentItem = null;
 
 var rot_x = 0
 var rot_y = 0
@@ -25,20 +25,35 @@ func _input(event):
 		rotate_object_local(Vector3(1, 0, 0), rot_y) # then rotate in X
 	if event is InputEventKey and event.pressed and event.keycode == KEY_Q:
 		print($RayCast3D.get_collision_point())
-		get_tree().get_root().get_node("SSC3").get_node("NavigationRegion3D/person").set_movement_target($RayCast3D.get_collision_point())
-		print(get_tree().get_root().get_node("SSC3").get_node("NavigationRegion3D/person/NavigationAgent3D").get_next_path_position())
-		print(get_tree().get_root().get_node("SSC3").get_node("NavigationRegion3D/person/NavigationAgent3D").get_final_position())
+		get_tree().get_root().get_node("SSC4").get_node("NavigationRegion3D/person").set_movement_target($RayCast3D.get_collision_point())
+		print(get_tree().get_root().get_node("SSC4").get_node("NavigationRegion3D/person/NavigationAgent3D").get_next_path_position())
+		print(get_tree().get_root().get_node("SSC4").get_node("NavigationRegion3D/person/NavigationAgent3D").get_final_position())
 	if event is InputEventKey and event.pressed and event.keycode == KEY_E:
 		for node in $Area3D.get_overlapping_bodies():
 			if node.is_in_group("NPC"):
 				print("NPC")
+				node.talkfunction()
 				#var resource = DialogueManager.create_resource_from_text("~ title\nCharacter: Hello!")
 				#var dialogue_line = await DialogueManager.get_next_dialogue_line(resource, "title")
 				#DialogueManager.show_dialogue_balloon(resource, "title")
 				#var resource2 = load("res://some_dialogue.dialogue")
 				# then
 				#var dialogue_line2 = await DialogueManager.get_next_dialogue_line(resource2, "this_is_a_node_title")
-				DialogueManager.show_dialogue_balloon(resource2, "this_is_a_node_title")
+	if event is InputEventMouseButton: 
+		if event.button_index == MOUSE_BUTTON_WHEEL_UP and event.pressed:
+			var blah = load("res://Attacks/horizontal_slash.tscn")
+			currentItem = blah.instantiate()
+			add_child(currentItem)
+			print(currentItem)
+			print("Wheel up")
+		if event.button_index == MOUSE_BUTTON_WHEEL_DOWN and event.pressed:
+			if currentItem != null:
+				currentItem.queue_free()
+			print("Wheel down")
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+			if currentItem != null:
+				print('use item')
+				currentItem.get_node("AnimationPlayer").play(currentItem.get_name())
 
 
 func _physics_process(delta):
@@ -97,16 +112,16 @@ func _physics_process(delta):
 		# As good practice, you should replace UI actions with custom gameplay actions.
 
 		if Input.is_action_pressed("shift"):
-			SPEED = 15.0
+			SPEED = 10.0
 		else:
 			SPEED = 5.0
 			
 		if direction:
 			if gliding == true:
 				print("gliding")
-				velocity.x = direction.x * SPEED * 8.0
+				velocity.x = direction.x * SPEED * 5.0
 				velocity.y -= gravity * delta * 0.02
-				velocity.z = direction.z * SPEED * 8.0
+				velocity.z = direction.z * SPEED * 5.0
 				if Input.is_action_just_released("space"):
 					print("not gliding")
 					gliding = false

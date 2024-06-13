@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cu2me01g24uk2"]
+
+[resource]
+resource_name = "metalyellow"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+roughness = 0.5

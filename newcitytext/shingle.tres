@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c830xv75a3w56"]
+
+[resource]
+resource_name = "shingle"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+metallic = 0.0772727
+roughness = 0.5

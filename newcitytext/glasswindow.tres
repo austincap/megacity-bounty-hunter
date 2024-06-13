@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://o83f4syd7o5y"]
+
+[resource]
+resource_name = "glasswindow"
+cull_mode = 2
+vertex_color_use_as_albedo = true

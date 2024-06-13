@@ -1,5 +1,6 @@
 extends CharacterBody3D
 
+var resource2 = load("res://addons/dialogue_manager/NPC1.dialogue")
 @export var SPEED: float = 14.0
 var movement_target: Vector3
 @onready var navigation_agent: NavigationAgent3D
@@ -30,3 +31,5 @@ func _on_velocity_computed(safe_velocity: Vector3):
 	velocity = safe_velocity
 	move_and_slide()
 
+func talkfunction():
+	DialogueManager.show_dialogue_balloon(resource2, "this_is_a_node_title")

@@ -4,13 +4,16 @@
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_f14pg"]
 margin = 0.001
-radius = 2.0
+radius = 0.831
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rtga6"]
 albedo_color = Color(1, 0.235294, 1, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_5scpc"]
-height = 1.5
+radius = 0.4
+height = 1.0
+radial_segments = 32
+rings = 4
 
 [node name="person" type="CharacterBody3D" groups=["NPC"]]
 collision_layer = 3
@@ -19,7 +22,6 @@ safe_margin = 0.01
 script = ExtResource("1_dn3aw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.481191, 0)
 shape = SubResource("SphereShape3D_f14pg")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
@@ -30,7 +32,7 @@ mesh = SubResource("CapsuleMesh_5scpc")
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
 [node name="Text" type="Label3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.53579, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60963, 0)
 text = "EARTEATEATAEWTAEWTAE"
 outline_size = 48
 autowrap_mode = 3
