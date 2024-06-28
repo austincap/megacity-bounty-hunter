@@ -4,6 +4,7 @@ var resource2 = load("res://addons/dialogue_manager/NPC1.dialogue")
 @export var SPEED: float = 14.0
 var movement_target: Vector3
 @onready var navigation_agent: NavigationAgent3D
+var hp = 10
 
 func _ready() -> void:
 	movement_target = Vector3(0,10,0)
@@ -25,6 +26,8 @@ func _physics_process(delta):
 		navigation_agent.set_velocity(new_velocity)
 	else:
 		_on_velocity_computed(new_velocity)
+	if hp <= 0:
+		self.queue_free()
 
 func _on_velocity_computed(safe_velocity: Vector3):
 	#print("VELOCITY COMPUTE")
@@ -33,3 +36,16 @@ func _on_velocity_computed(safe_velocity: Vector3):
 
 func talkfunction():
 	DialogueManager.show_dialogue_balloon(resource2, "this_is_a_node_title")
+
+
+
+
+func _on_area_3d_area_entered(area):
+	area.get_name()
+	print("DMG")
+	self.get_node("Text").text = "OWCH!"
+	if area.is_in_group('weapon'):
+		self.get_node("Text").text = "OWCH!"
+		self.hp -= 1
+
+		

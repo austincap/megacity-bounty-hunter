@@ -1,0 +1,119 @@
+[gd_scene load_steps=12 format=3 uid="uid://b375qc3uj5v1g"]
+
+[ext_resource type="ArrayMesh" uid="uid://w04l70u0tba3" path="res://Attacks/pistol.obj" id="1_w2lsv"]
+[ext_resource type="Script" path="res://Attacks/pistol.gd" id="2_wqaof"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kw5js"]
+direction = Vector3(-10, 0, 0)
+spread = 1.0
+gravity = Vector3(0, -1.73, 0)
+initial_velocity_min = 100.0
+initial_velocity_max = 120.0
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jvnlp"]
+albedo_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+metallic = 0.85
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_p8n3p"]
+material = SubResource("StandardMaterial3D_jvnlp")
+radius = 0.1
+height = 0.4
+radial_segments = 6
+rings = 2
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_kljcn"]
+radius = 0.25
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0aasr"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_lo60a"]
+material = SubResource("StandardMaterial3D_0aasr")
+radius = 0.59
+height = 1.2
+radial_segments = 4
+rings = 1
+is_hemisphere = true
+
+[sub_resource type="Animation" id="Animation_0cpcm"]
+resource_name = "pistol"
+step = 0.01
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area3D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.4, 1, -90, 0, 0, 0.41, 1, 0, 0, 0)
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GPUParticles3D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"restart"
+}, {
+"args": [Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0), Vector3(0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 1), 0],
+"method": &"emit_particle"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_fqwg2"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area3D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6v13h"]
+_data = {
+"RESET": SubResource("Animation_fqwg2"),
+"pistol": SubResource("Animation_0cpcm")
+}
+
+[node name="pistol" type="MeshInstance3D"]
+transform = Transform3D(-0.157551, 0, -0.769027, 0, 0.785, 0, 0.769027, 0, -0.157551, 3.73317, 2.23535, -13.7001)
+mesh = ExtResource("1_w2lsv")
+script = ExtResource("2_wqaof")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 3.63798e-12, 0, 1, 0, -3.63798e-12, 0, 1, 0, 0, 0)
+emitting = false
+amount = 2
+lifetime = 1.39
+one_shot = true
+preprocess = 3.41
+explosiveness = 0.16
+process_material = SubResource("ParticleProcessMaterial_kw5js")
+draw_pass_1 = SubResource("CapsuleMesh_p8n3p")
+
+[node name="Area3D" type="Area3D" parent="." groups=["weapon"]]
+transform = Transform3D(1, 0, 3.63798e-12, 0, 1, 0, -3.63798e-12, 0, 1, 0, 0, 0)
+collision_layer = 5
+collision_mask = 5
+input_ray_pickable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_kljcn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D"]
+transform = Transform3D(1, 0, 4.47035e-08, 0, 1, 0, -4.47035e-08, 0, 1, -0.739908, 0, 0.151585)
+mesh = SubResource("SphereMesh_lo60a")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_6v13h")
+}
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

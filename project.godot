@@ -132,10 +132,20 @@ mousewheel_down={
 
 locale/translations_pot_files=PackedStringArray("res://addons/dialogue_manager/NPC1.dialogue")
 
+[layer_names]
+
+3d_physics/layer_1="solid bodies"
+3d_physics/layer_2="interactable spaces"
+3d_physics/layer_3="weapons hitboxes"
+
 [physics]
 
+3d/run_on_separate_thread=true
+common/physics_ticks_per_second=120
+common/max_physics_steps_per_frame=20
 3d/physics_engine="GodotPhysics3D"
 3d/default_gravity=16.8
+3d/solver/contact_max_allowed_penetration=0.001
 
 [rendering]
 

@@ -1,13 +1,18 @@
 extends CharacterBody3D
 
 var SPEED = 5.0
-const JUMP_VELOCITY = 20.5
+const JUMP_VELOCITY = 9.0
 const LOOKAROUND_SPEED = 0.01
 var gliding = false
 var hookshotlatched = false
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var currentItem = null;
+var blah = load("res://Attacks/horizontal_slash.tscn")
+var pistol = load("res://Attacks/pistol.tscn")
+var currentInventoryIndex = 0
+var invArray = [null, blah, pistol]
+#signal_name.connect(_event_handler_method.bindv([params]))
 
 var rot_x = 0
 var rot_y = 0
@@ -41,19 +46,23 @@ func _input(event):
 				#var dialogue_line2 = await DialogueManager.get_next_dialogue_line(resource2, "this_is_a_node_title")
 	if event is InputEventMouseButton: 
 		if event.button_index == MOUSE_BUTTON_WHEEL_UP and event.pressed:
-			var blah = load("res://Attacks/horizontal_slash.tscn")
-			currentItem = blah.instantiate()
-			add_child(currentItem)
-			print(currentItem)
+			currentInventoryIndex += 1
 			print("Wheel up")
 		if event.button_index == MOUSE_BUTTON_WHEEL_DOWN and event.pressed:
-			if currentItem != null:
-				currentItem.queue_free()
+			currentInventoryIndex -= 1
 			print("Wheel down")
-		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		print(currentItem)
+		if currentItem != null:
+			currentItem.queue_free()
+		print(currentInventoryIndex)
+		currentItem = invArray[currentInventoryIndex % len(invArray)].instantiate()
+		add_child(currentItem)
+		if event.button_index == MOUSE_BUTTON_LEFT:
 			if currentItem != null:
 				print('use item')
+				print(currentItem.get_name())
 				currentItem.get_node("AnimationPlayer").play(currentItem.get_name())
+				
 
 
 func _physics_process(delta):
@@ -78,7 +87,7 @@ func _physics_process(delta):
 						direction = global_position.direction_to(collisionPoint)
 					else:
 						direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-					velocity = direction * SPEED * 10.0
+					velocity = direction * SPEED * 8.0
 				else:
 					direction = Vector3(0, 0, 0)
 					velocity = direction * 0
@@ -133,6 +142,7 @@ func _physics_process(delta):
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 			velocity.z = move_toward(velocity.z, 0, SPEED)
 	move_and_slide()
+
 
 
 func _on_area_3d_body_entered(body):

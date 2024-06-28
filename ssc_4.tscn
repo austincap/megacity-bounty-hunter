@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cw7ry0xgrm4qw"]
+[gd_scene load_steps=9 format=3 uid="uid://cw7ry0xgrm4qw"]
 
 [ext_resource type="Environment" uid="uid://dlpyu2pdp2vpj" path="res://mc3.tres" id="1_0gt4b"]
 [ext_resource type="PackedScene" uid="uid://d3lhvseymrcdj" path="res://sproutstylecity4.gltf" id="1_ahrb2"]
@@ -19,6 +19,13 @@ region_min_size = 4.0
 edge_max_length = 50.0
 edge_max_error = 1.0
 filter_low_hanging_obstacles = true
+
+[sub_resource type="Curve3D" id="Curve3D_em3cw"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 10.6601, -4.85784, -1.12968, 0, 0, 0, 0, 0, 0, 4.249, -4.95846, 21.5325, 0, 0, 0, 0, 0, 0, 11.805, -4.67115, 12.5965, 0, 0, 0, 0, 0, 0, 17.8319, -5.01565, -30.6418, 0, 0, 0, 0, 0, 0, 17.6433, -4.80459, -46.6626, 0, 0, 0, 0, 0, 0, 2.16374, -5.08524, -44.8519, 0, 0, 0, 0, 0, 0, -47.1084, -0.418221, -44.7119),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 7
 
 [node name="SSC4" type="WorldEnvironment"]
 environment = ExtResource("1_0gt4b")
@@ -68,7 +75,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.975, 13.665, 29.63)
 
 [node name="person" parent="NavigationRegion3D" instance=ExtResource("2_rsb15")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.41433, 11.5155, -8.41468)
-floor_block_on_wall = false
 SPEED = 16.0
 
 [node name="Interactables" type="Node" parent="."]
@@ -111,5 +117,11 @@ transform = Transform3D(0.951862, 0, -0.306526, 0, 1, 0, 0.306526, 0, 0.951862, 
 
 [node name="Player" parent="." instance=ExtResource("3_b3dtq")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -13.3969, 14.5057, -13.5731)
+
+[node name="Path3D" type="Path3D" parent="."]
+curve = SubResource("Curve3D_em3cw")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
+transform = Transform3D(-0.962237, -0.00116298, 0.272213, 5.82077e-11, 0.999991, 0.00427228, -0.272215, 0.00411094, -0.962228, 10.6601, -4.85784, -1.12968)
 
 [editable path="sproutstylecity4"]

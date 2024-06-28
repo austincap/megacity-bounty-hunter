@@ -6,6 +6,9 @@
 radius = 0.075
 height = 1.981
 
+[sub_resource type="Animation" id="Animation_uxxmg"]
+length = 0.001
+
 [sub_resource type="Animation" id="Animation_k4fme"]
 resource_name = "swing"
 loop_mode = 2
@@ -24,16 +27,13 @@ tracks/1/interp = 1
 tracks/1/loop_wrap = false
 tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.5, 1, 0.995, 0, 0, 1, 1, 0.995, 0, -0.775)
 
-[sub_resource type="Animation" id="Animation_uxxmg"]
-length = 0.001
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_oo5um"]
 _data = {
 "RESET": SubResource("Animation_uxxmg"),
 "horizontal_slash": SubResource("Animation_k4fme")
 }
 
-[node name="horizontal_slash" type="Area3D"]
+[node name="horizontal_slash" type="Area3D" groups=["weapon"]]
 transform = Transform3D(1, 0, 0, 0, 0.882809, -0.469732, 0, 0.469732, 0.882809, 0, 0, 0)
 collision_layer = 4
 collision_mask = 4
@@ -49,3 +49,5 @@ transform = Transform3D(0.505, 0, 0, 0, 0.505, 0, 0, 0, 0.505, 0, 1.27196, 0)
 libraries = {
 "": SubResource("AnimationLibrary_oo5um")
 }
+
+[connection signal="body_entered" from="." to="." method="overlaps_body"]

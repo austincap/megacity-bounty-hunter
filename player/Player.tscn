@@ -3,8 +3,9 @@
 [ext_resource type="Script" path="res://player/Player.gd" id="1_5y12t"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p2eoi"]
-margin = 0.001
-radius = 0.4
+custom_solver_bias = 0.595
+margin = 0.01
+height = 2.258
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_54e3a"]
 
@@ -14,20 +15,17 @@ radial_segments = 6
 rings = 2
 
 [node name="Player" type="CharacterBody3D"]
-transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
 slide_on_ceiling = false
-floor_block_on_wall = false
+floor_snap_length = 0.0
 safe_margin = 0.1
 script = ExtResource("1_5y12t")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.179349, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0689171, 0)
 shape = SubResource("CapsuleShape3D_p2eoi")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.243788, 3.44347)
-current = true
-fov = 70.0
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_p2eoi")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
@@ -35,12 +33,17 @@ target_position = Vector3(0, -40, 0)
 debug_shape_custom_color = Color(0, 0.756863, 0, 1)
 debug_shape_thickness = 4
 
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.999258, 0, -0.0385099, 0, 1, 0, 0.0385099, 0, 0.999258, 0, 0.607502, -0.330054)
+current = true
+fov = 81.9
+
 [node name="Area3D" type="Area3D" parent="."]
-collision_layer = 2
+collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.43662)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.09521)
 shape = SubResource("SphereShape3D_54e3a")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
