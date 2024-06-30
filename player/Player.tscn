@@ -34,7 +34,7 @@ debug_shape_custom_color = Color(0, 0.756863, 0, 1)
 debug_shape_thickness = 4
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.999258, 0, -0.0385099, 0, 1, 0, 0.0385099, 0, 0.999258, 0, 0.607502, -0.330054)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.607502, -0.330054)
 current = true
 fov = 81.9
 

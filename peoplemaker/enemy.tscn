@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3 uid="uid://cgqw8m4c3itn8"]
+
+[ext_resource type="Script" path="res://peoplemaker/enemy.gd" id="1_8ckpx"]
+[ext_resource type="PackedScene" uid="uid://b375qc3uj5v1g" path="res://Attacks/pistol.tscn" id="2_14d12"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_f14pg"]
+margin = 0.001
+radius = 0.831
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rtga6"]
+albedo_color = Color(1, 0.235294, 0.105882, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_5scpc"]
+radius = 0.4
+height = 1.0
+radial_segments = 32
+rings = 4
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_pq3qd"]
+
+[node name="enemy" type="CharacterBody3D" groups=["NPC"]]
+collision_layer = 7
+collision_mask = 3
+script = ExtResource("1_8ckpx")
+SPEED = null
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_f14pg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 2.15325, 0, 0, 0, 1.54052, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_rtga6")
+mesh = SubResource("CapsuleMesh_5scpc")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="Text" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60963, 0)
+text = "EARTEATEATAEWTAEWTAE"
+outline_size = 48
+autowrap_mode = 3
+width = 600.0
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_pq3qd")
+
+[node name="pistol" parent="." instance=ExtResource("2_14d12")]
+transform = Transform3D(0.00675291, 0, 0.154853, 0, 0.155, 0, -0.154853, 0, 0.00675291, -0.464965, 0.828456, 1.34508)
+
+[node name="RayCast3D1" type="RayCast3D" parent="."]
+target_position = Vector3(4.695, 0.97, 9.38)
+collision_mask = 5
+collide_with_areas = true
+debug_shape_custom_color = Color(0, 0, 0.772549, 1)
+debug_shape_thickness = 4
+
+[node name="RayCast3D2" type="RayCast3D" parent="."]
+target_position = Vector3(-7.04, 0.97, 9.38)
+collision_mask = 5
+collide_with_areas = true
+debug_shape_custom_color = Color(0, 0, 0.772549, 1)
+debug_shape_thickness = 4
+
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
