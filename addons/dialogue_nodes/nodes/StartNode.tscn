@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://bm8wjt0q7t7gg"]
 
-[ext_resource path="res://addons/dialogue_nodes/icons/Play.svg" type="Texture2D" id=1]
-[ext_resource path="res://addons/dialogue_nodes/nodes/startNode.gd" type="Script" id=2]
+[ext_resource type="Texture2D" uid="uid://bucad3kf5mxvp" path="res://addons/dialogue_nodes/icons/Play.svg" id="1"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/nodes/startNode.gd" id="2"]
 
 [node name="StartNode" type="GraphNode"]
 offset_right = 180.0
@@ -10,11 +10,11 @@ title = "Start"
 show_close = true
 slot/0/left_enabled = false
 slot/0/left_type = 0
-slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/left_color = Color(1, 1, 1, 1)
 slot/0/right_enabled = true
 slot/0/right_type = 0
-slot/0/right_color = Color( 1, 1, 1, 1 )
-script = ExtResource( 2 )
+slot/0/right_color = Color(1, 1, 1, 1)
+script = ExtResource("2")
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -29,7 +29,7 @@ offset_bottom = 48.0
 offset_right = 28.0
 offset_bottom = 24.0
 tooltip_text = "Run this tree."
-icon = ExtResource( 1 )
+icon = ExtResource("1")
 flat = true
 
 [node name="IDLabel" type="Label" parent="HBoxContainer"]

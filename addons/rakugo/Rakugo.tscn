@@ -1,7 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://cw868eu5yoy0l"]
 
-[ext_resource path="res://addons/Rakugo/Rakugo.gd" type="Script" id=1]
+[ext_resource type="Script" path="res://addons/Rakugo/Rakugo.gd" id="1"]
 
 [node name="Rakugo" type="Node"]
 process_mode = 2
-script = ExtResource( 1 )
+script = ExtResource("1")

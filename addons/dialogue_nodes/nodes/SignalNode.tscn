@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://b8vmaffc54wpl"]
 
-[ext_resource path="res://addons/dialogue_nodes/nodes/signalNode.gd" type="Script" id=1]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/nodes/signalNode.gd" id="1"]
 
 [node name="SignalNode" type="GraphNode"]
 offset_right = 200.0
@@ -9,11 +9,11 @@ title = "Signal"
 show_close = true
 slot/0/left_enabled = true
 slot/0/left_type = 0
-slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/left_color = Color(1, 1, 1, 1)
 slot/0/right_enabled = true
 slot/0/right_type = 0
-slot/0/right_color = Color( 1, 1, 1, 1 )
-script = ExtResource( 1 )
+slot/0/right_color = Color(1, 1, 1, 1)
+script = ExtResource("1")
 __meta__ = {
 "_edit_use_anchors_": false
 }

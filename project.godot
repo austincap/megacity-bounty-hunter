@@ -26,7 +26,7 @@ rakugo/save_folder="user://saves"
 [application]
 
 config/name="megacity-bounty-hunter"
-config/features=PackedStringArray("4.1", "Forward Plus")
+config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]

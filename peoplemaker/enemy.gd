@@ -28,7 +28,7 @@ func _physics_process(delta):
 		_on_velocity_computed(new_velocity)
 	if hp <= 0:
 		self.queue_free()
-	$RayCast3D1
+	#$RayCast3D1
 	
 
 func _on_velocity_computed(safe_velocity: Vector3):
