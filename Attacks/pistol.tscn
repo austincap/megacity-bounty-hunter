@@ -1,27 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://b375qc3uj5v1g"]
+[gd_scene load_steps=16 format=3 uid="uid://b375qc3uj5v1g"]
 
 [ext_resource type="ArrayMesh" uid="uid://w04l70u0tba3" path="res://Attacks/pistol.obj" id="1_w2lsv"]
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kw5js"]
-direction = Vector3(-10, 0, 0)
-spread = 1.0
-initial_velocity_min = 100.0
-initial_velocity_max = 120.0
-gravity = Vector3(0, -1.73, 0)
-collision_mode = 1
-collision_friction = 0.0
-collision_bounce = 0.0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jvnlp"]
-albedo_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
-metallic = 0.85
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_p8n3p"]
-material = SubResource("StandardMaterial3D_jvnlp")
-radius = 0.1
-height = 0.4
-radial_segments = 6
-rings = 2
+[sub_resource type="PlaceholderMesh" id="PlaceholderMesh_uy17q"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_kljcn"]
 radius = 0.25
@@ -45,7 +26,21 @@ tracks/0/enabled = true
 tracks/0/path = NodePath("Area3D")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0)
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.01, 1, -60, 0, 0)
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MuzzleFlash")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"restart"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_0cpcm"]
 resource_name = "pistol"
@@ -56,23 +51,18 @@ tracks/0/enabled = true
 tracks/0/path = NodePath("Area3D")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.4, 1, -90, 0, 0, 0.41, 1, 0, 0, 0)
-tracks/1/type = "method"
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.34, 1, -60, 0, 0, 0.41, 1, 0, 0, 0)
+tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("GPUParticles3D")
+tracks/1/path = NodePath("MuzzleFlash:emitting")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"values": [{
-"args": [],
-"method": &"restart"
-}, {
-"args": [Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0), Vector3(0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 1), 0],
-"method": &"emit_particle"
-}]
+"times": PackedFloat32Array(0.03),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6v13h"]
@@ -81,37 +71,85 @@ _data = {
 "pistol": SubResource("Animation_0cpcm")
 }
 
-[node name="pistol" type="MeshInstance3D"]
-transform = Transform3D(-0.0114373, 0, -0.709908, 0, 0.71, 0, 0.709908, 0, -0.0114373, 3.73317, 2.23535, -6.76271)
-mesh = ExtResource("1_w2lsv")
+[sub_resource type="Curve" id="Curve_b04bx"]
+min_value = -1.0
+_data = [Vector2(0, -0.142857), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
 
-[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 3.63798e-12, 0, 1, 0, -3.63798e-12, 0, 1, 0, 0, 0)
-emitting = false
-amount = 2
-lifetime = 1.39
-one_shot = true
-preprocess = 3.41
-explosiveness = 0.16
-process_material = SubResource("ParticleProcessMaterial_kw5js")
-draw_pass_1 = SubResource("CapsuleMesh_p8n3p")
+[sub_resource type="CurveTexture" id="CurveTexture_1h67w"]
+curve = SubResource("Curve_b04bx")
+
+[sub_resource type="Curve" id="Curve_onlai"]
+max_value = 3.0
+_data = [Vector2(0.0144928, 1.51648), 0.0, 0.0, 0, 0, Vector2(1, 0.692308), -3.98077, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_83sge"]
+curve = SubResource("Curve_onlai")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2i84o"]
+direction = Vector3(0, 0, 1)
+spread = 180.0
+flatness = 1.0
+initial_velocity_min = 60.24
+initial_velocity_max = 60.24
+angular_velocity_min = 17.35
+angular_velocity_max = 52.05
+radial_velocity_min = 5.0
+radial_velocity_max = 5.0
+gravity = Vector3(0, -40, 0)
+scale_over_velocity_curve = SubResource("CurveTexture_83sge")
+hue_variation_curve = SubResource("CurveTexture_1h67w")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3m7np"]
+emission_enabled = true
+emission = Color(0.945098, 0.619608, 0.301961, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_p4ffb"]
+material = SubResource("StandardMaterial3D_3m7np")
+size = Vector2(0.2, 0.2)
+
+[node name="pistol" type="MeshInstance3D"]
+transform = Transform3D(-0.00652407, 0, -0.404947, 0, 0.405, 0, 0.404947, 0, -0.00652407, 1.43969, 0.506369, -2.8804)
+mesh = SubResource("PlaceholderMesh_uy17q")
 
 [node name="Area3D" type="Area3D" parent="." groups=["weapon"]]
-transform = Transform3D(1, 0, 3.63798e-12, 0, 1, 0, -3.63798e-12, 0, 1, 0, 0, 0)
-collision_layer = 5
-collision_mask = 5
+collision_layer = 7
+collision_mask = 7
 input_ray_pickable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0726738, 0, 0.00117087)
 shape = SubResource("SphereShape3D_kljcn")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D"]
-transform = Transform3D(1, 0, 4.47035e-08, 0, 1, 0, -4.47035e-08, 0, 1, -0.739908, 0, 0.151585)
+transform = Transform3D(0.056203, -0.998094, 0.0254759, 0.998317, 0.0558146, -0.0157073, 0.0142554, 0.0263159, 0.999551, -0.0915976, 0.202311, 0.119761)
 mesh = SubResource("SphereMesh_lo60a")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_6v13h")
 }
+speed_scale = 2.0
 
-[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.775, 0, 0, 0, 0.775, 0, 0, 0, 0.775, 0, 0, 0)
+mesh = ExtResource("1_w2lsv")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+target_position = Vector3(-60, 0, 0)
+collision_mask = 5
+
+[node name="MuzzleFlash" type="GPUParticles3D" parent="."]
+transform = Transform3D(-0.00169849, -1.07986, 0.0174271, 1.07986, -0.00197926, -0.0173975, 0.0174271, 0.0173975, 1.07972, -2.32228, 0, 0.0374141)
+emitting = false
+amount = 20
+lifetime = 0.3
+one_shot = true
+explosiveness = 0.65
+fixed_fps = 60
+interpolate = false
+fract_delta = false
+transform_align = 3
+process_material = SubResource("ParticleProcessMaterial_2i84o")
+draw_pass_1 = SubResource("QuadMesh_p4ffb")

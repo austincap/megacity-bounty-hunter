@@ -10,8 +10,9 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var currentItem = null;
 var blah = load("res://Attacks/horizontal_slash.tscn")
 var pistol = load("res://Attacks/pistol.tscn")
+var null_item = load("res://Attacks/null_item.tscn")
 var currentInventoryIndex = 0
-var invArray = [null, blah, pistol]
+var invArray = [null_item, blah, pistol]
 #signal_name.connect(_event_handler_method.bindv([params]))
 
 var rot_x = 0
@@ -57,12 +58,12 @@ func _input(event):
 		print(currentInventoryIndex)
 		currentItem = invArray[currentInventoryIndex % len(invArray)].instantiate()
 		add_child(currentItem)
-		if event.button_index == MOUSE_BUTTON_LEFT:
-			if currentItem != null:
+		if Input.is_action_just_pressed("left_click"):
+			print(currentItem.get_name())
+			if currentItem.get_name() != "NullItem":
 				print('use item')
 				print(currentItem.get_name())
 				currentItem.get_node("AnimationPlayer").play(currentItem.get_name())
-				
 
 
 func _physics_process(delta):
@@ -74,6 +75,7 @@ func _physics_process(delta):
 		self.rotation.z -= 0.05
 	if Input.is_action_pressed("thumb_click") and Input.is_action_pressed("a"):
 		self.rotation.z += 0.05
+
 	if Input.is_action_pressed("rightclick"):
 		print("hookshot held")
 		if $RayCast3D.is_colliding():

@@ -41,14 +41,16 @@ func talkfunction():
 
 
 func thinkFunction():
-	
+	pass
 
 func _on_area_3d_area_entered(area):
 	area.get_name()
 	print("DMG")
-	self.get_node("Text").text = "OWCH!"
+	#self.get_node("Text").text = "OWCH!"
+	$GPUParticles3D.emitting = true
 	if area.is_in_group('weapon'):
 		self.get_node("Text").text = "OWCH!"
 		self.hp -= 1
+		$AnimationPlayer.play("damaged")
 
 		
